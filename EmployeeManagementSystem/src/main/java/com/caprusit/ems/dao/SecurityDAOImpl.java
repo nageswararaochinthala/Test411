@@ -31,7 +31,7 @@ public class SecurityDAOImpl implements ISecurityDAO {
 	public String changePassword(Admin admin) {
 		Session session = sessionFactory.openSession();
 		System.out.println("in daoimpl");
-		System.out.println("change done");
+		System.out.println("change done12");
 		String hql = "update com.caprusit.ems.domain.Admin as a set a.password=? where a.adminId=10230";
 		Query query = session.createQuery(hql);
 		query.setParameter(0, admin.getPassword());
